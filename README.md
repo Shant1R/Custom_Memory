@@ -29,7 +29,11 @@ module RAM #(parameter WIDTH = 8, DEPTH = 8)
     
 endmodule
 ```
+
+In the above mentioned code. ```$clog2``` is a system function, which derives the log on base 2, to determine the width for address varibles according to the width of the memory required. 
+
 *NOTE* - The design is synthesized for FPGA implementation here on. The RTL will be the same for ASIC flow as well. Just the difference will be, for ASIC flow, the WIDTH and DEPTH of the Custom RAM will be fixed, whereas under FPGA flow, one has the freedom for parameterisig them as per need. 
+
 
 The block diagram for the given code. 
 Elaborated Design
